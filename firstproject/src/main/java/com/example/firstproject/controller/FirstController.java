@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class FirstController {
 
     @GetMapping("/hi")                  //URL 요청 접수
-    public String niceToMeetYou(Model model){ // model객체 받아 오기
+    public String niceToMeetYou(Model model) { // model객체 받아 오기
         model.addAttribute("username", "minsun");
         return "greetings";             //greetings.mustache 파일로 반환
     }
 
     @GetMapping("/bye")
-    public String seeYouNext(Model model){
+    public String seeYouNext(Model model) {
         model.addAttribute("nickname", "min");
         return "goodbye";
     }
