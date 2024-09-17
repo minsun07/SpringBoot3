@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+@SuppressWarnings("unused")
 @Controller                             //컨트롤러 선언
 public class FirstController {
 
